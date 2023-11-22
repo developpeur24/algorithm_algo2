@@ -1,0 +1,36 @@
+ALGORITHM algorithm_reponses
+VAR 
+    sum, i, j : INTEGER = 0;
+    trouver : BOOLEAN := false;
+    tab1 : ARRAY_OF INTEGER[4] : [3, 1, 7, 9];
+    tab2 : ARRAY_OF INTEGER[5] : [2, 4, 1, 9, 3];
+BEGIN
+    FOR i from 0 to tab1.LENGHT-1 DO  
+        FOR j from 0 to tab2.LENGHT-1 DO 
+            IF(tab1[i]==ensemble2[j]) THEN
+                trouver := true;
+                break;
+            ELSE
+                trouver ;= false
+            END_IF
+        END_FOR
+        IF (trouver == false) THEN
+            sum := sum + tab1[i]
+        END_IF
+    END_FOR
+    FOR i from 0 to tab2.LENGHT-1 DO  
+        FOR j from 0 to tab2.LENGHT-1 DO 
+            IF(tab2[i]==ensemble2[j]) THEN
+                trouver := true;
+                break;
+            ELSE
+                trouver ;= false
+            END_IF
+        END_FOR
+        IF (trouver == false) THEN
+            sum := sum + tab1[i]
+        END_IF
+    END_FOR
+             
+
+END
